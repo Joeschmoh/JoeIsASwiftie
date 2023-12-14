@@ -1,12 +1,15 @@
+
+
 [routers]
-rtr1 ansible_host=10.0.1.10
+10.0.1.10
 rtr2 ansible_host=10.0.1.20
 rtr3 ansible_host=10.0.1.30
 
 [routers:vars]
 ansible_network_os=ios
 ansible_connection=network_cli
+ansible_network_cli_ssh_type=paramiko
 ansible_become=yes
-ansible_become_method=en
+ansible_become_method=enable
 ansible_become_password=WWTwwt1!
 
